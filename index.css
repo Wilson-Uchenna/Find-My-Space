@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+ img {
+    max-width: 100%;
+ }
+ #nav-header {
+   font-family: 'Oswald';
+ }
+ #list-class {
+   margin-right: 17%;
+ }
+ p {
+  font-family: 'Lato';
+ }
+ #main {
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(img/house.png), lightgray 0px -80.968px / 100% 146.119% no-repeat;
+ }
+ #rent-locations {
+   background-color: #fff;
+   display: inline-flex;
+ }
+ .border-none {
+   border: none;
+ }
+ #image-shadow {
+  content: '';
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  background-color: #0D47A1;
+  z-index: 1;
+ }
+ .image-shadow-img {
+  position: relative;
+  top: 40;
+  right: 20;
+  z-index: 2;
+ }
+ .specs {
+  font-size: 12px;
+ }
+ .image-text {
+  margin-top: 0px;
+ }
+ #image-grid-footer {
+  margin-top: -10px;
+  padding-top: -15px;
+  border-top-width: 0.5px;
+  border-top-color: black;
+  border-top-style: solid;
+ }
+ #location-text {
+  margin-top: -15px;
+ }
+ .location-grid-footer {
+  margin-top: -25px;
+ }
+ button {
+  background-color: #0D47A1;
+  color: #fff;
+  border: none;
+ }
+ .button-color {
+  background-color: #fff;
+  color: #0D47A1;
+  border: 1.5px solid #0D47A1;
+ }
+#footer {
+  background-color: black;
+  color: #fff;
+}
