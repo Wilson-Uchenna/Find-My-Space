@@ -14,6 +14,14 @@
  }
  #main {
    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(img/house.png), lightgray 0px -80.968px / 100% 146.119% no-repeat;
+   padding-bottom: 200px;
+  }
+ #main-2 {
+  background-image: url(img/family-image.png);
+ }
+ #main-2 div {
+  padding-bottom: 200px;
+  line-height: 30px;
  }
  #rent-locations {
    background-color: #fff;
@@ -24,17 +32,11 @@
  }
  #image-shadow {
   content: '';
-  width: 500px;
+  max-width: 400px;
   height: 300px;
   position: absolute;
   background-color: #0D47A1;
   z-index: 1;
- }
- .image-shadow-img {
-  position: relative;
-  top: 40;
-  right: 20;
-  z-index: 2;
  }
  .specs {
   font-size: 12px;
@@ -60,6 +62,9 @@
   color: #fff;
   border: none;
  }
+ .btn-group button a:focus {
+  color: white;
+ }
  .button-color {
   background-color: #fff;
   color: #0D47A1;
@@ -68,4 +73,7 @@
 #footer {
   background-color: black;
   color: #fff;
+}
+.footer-text {
+  opacity: 0.5;
 }
