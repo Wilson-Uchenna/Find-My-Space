@@ -1,5 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Oswald&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+  @media screen and (max-width: 420px) {
+    #image-shadow {
+      content: '';
+      max-width: 350px;
+      height: 300px;
+      position: absolute;
+      background-color: #0D47A1;
+      z-index: 1;
+     }
+     #image-shadow .position-sbsolute img {
+      max-width: 200px;
+     }
+     #rent-locations {
+      max-width: 400px;
+     }
+  }
  img {
     max-width: 100%;
  }
@@ -26,6 +42,7 @@
  #rent-locations {
    background-color: #fff;
    display: inline-flex;
+   max-width: 50%;
  }
  .border-none {
    border: none;
@@ -37,6 +54,10 @@
   position: absolute;
   background-color: #0D47A1;
   z-index: 1;
+ }
+ .image-shadow-img {
+  max-width: 1500px;
+  height: 300px;
  }
  .specs {
   font-size: 12px;
