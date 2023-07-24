@@ -25,6 +25,12 @@
    #rent-locations {
     max-width: 60%
   }
+  .product-head {
+    font-size: 10px;
+  }
+  /* #card {
+    width: 20rem;
+  } */
 }
 
 
@@ -72,8 +78,8 @@
  }
 
  #main {
-   background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url(img/house.png), lightgray 0px -80.968px / 100% 146.119% no-repeat;
-   padding-bottom: 200px;
+   background-image: url(img/house.png);
+  padding-bottom: 200px;
   }
 
  #main-2 {
