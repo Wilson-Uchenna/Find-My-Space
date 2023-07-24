@@ -85,7 +85,13 @@
  #main-2 {
   background-image: url(img/family-image.png);
  }
-
+#main-3 {
+  background-image: url(img/news-how-it-works.png);
+  background-size: 100%;
+}
+#section-3 {
+  font-weight: bold;
+}
  #main-2 div {
   padding-bottom: 200px;
   line-height: 30px;
