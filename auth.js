@@ -5,6 +5,7 @@ const email = document.getElementById("email")
 const address = document.getElementById("address")
 const password = document.getElementById("password")
 
+const firstButton = document.getElementsByClassName('text-primary')
 // show error function 
 function showError(input, message) {
     const inputBox = input.parentElement;
@@ -91,6 +92,6 @@ if (loginForm) {
 
         if (count == 2) {
             window.location.href = "./index.html";
-        }
+            }
     });
 }
