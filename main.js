@@ -1,4 +1,5 @@
-const form = document.getElementById("form")
+const loginForm = document.getElementById("login-form")
+const signupForm = document.getElementById("signup-form")
 const username = document.getElementById("username")
 const email = document.getElementById("email")
 const address = document.getElementById("address")
@@ -25,32 +26,71 @@ function isValidEmail(email) {
 }
 
 //show event listener
-form.addEventListener('submit', function (e) {
-    e.preventDefault();
+if (signupForm) {
+    signupForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let count = 0;
 
-    if(username.value === '') {
-        showError(username, 'The username or password you entered is incorrect, please try again');
-    }else {
-        showSuccess(username)
-    }
+        if(username.value === '') {
+            showError(username, 'The username or password you entered is incorrect, please try again');
+        }else {
+            count++;
+            showSuccess(username)
+        }
 
-    if(email.value === '') {
-        showError(email, 'The email you entered is incorrect, please try again');
-    } else if (!isValidEmail(email.value)) {
-        showError(email, 'Email is not valid');
-    }else {
-        showSuccess(email)
-    }
+        if(email.value === '') {
+            showError(email, 'The email you entered is incorrect, please try again');
+        } else if (!isValidEmail(email.value)) {
+            showError(email, 'Email is not valid');
+        }else {
+            count++;
+            showSuccess(email)
+        }
 
-    if(address.value === '') {
-        showError(address, 'Name is required');
-    }else {
-        showSuccess(address)
-    }
+        if(address.value === '') {
+            showError(address, 'Name is required');
+        }else {
+            count++;
+            showSuccess(address)
+        }
 
-    if(password.value === '') {
-        showError(password, 'The username or password you entered is incorrect, please try again');
-    }else {
-        showSuccess(password)
-    }
-});
+        if(password.value === '') {
+            showError(password, 'The username or password you entered is incorrect, please try again');
+        }else {
+            count++;
+            showSuccess(password)
+        }
+
+        if (count == 4) {
+            window.location.href = "./index.html";
+        }
+    });
+}
+
+//show event listener
+if (loginForm) {
+    loginForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        let count = 0;
+
+        if(email.value === '') {
+            showError(email, 'The email you entered is incorrect, please try again');
+        } else if (!isValidEmail(email.value)) {
+            showError(email, 'Email is not valid');
+        }else {
+            count++;
+            showSuccess(email)
+        }
+
+        if(password.value === '') {
+            showError(password, 'The username or password you entered is incorrect, please try again');
+        }else {
+            count++;
+            showSuccess(password)
+        }
+
+        if (count == 2) {
+            window.location.href = "./index.html";
+        }
+    });
+}
