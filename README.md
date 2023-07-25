@@ -27,3 +27,4 @@ Find my space
 </div>
 
 <p class="my-2">Rent<img class="ms-1" src="img/chevron-down.svg"></p>
+<script src="https://kit.fontawesome.com/e9d498be9f.js" crossorigin="anonymous"></script>
