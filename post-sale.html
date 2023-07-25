@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <div id="hero">
+    <div id="hero" style="background-color: #f7f7f7;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" href="index.html" id="nav-header" style="color: #0d47a1;">Find My Space</a>
@@ -49,57 +49,53 @@
                 </div>
             </div>
         </nav>
-        <div class="container py-3">
-            <h3>How It Works</h3>
+        <div class="container">
+            <h2>Post Your Home For Sale</h2>
         </div>
-        <main id="main-3" class="w-auto p-3 h-100">
-            <div class="container py-5 w-auto h-100"></div>
-        </main>
-        <section id="section-3">
-            <div class="container py-5">
-                <h3>Step 1: Set Your Budget</h3>
-                <p>Before you start looking for the right property, first consider what your priorities are – location,
-                    number of bedrooms, size of lounge etc and match them against your available budget. Using our
-                    finance calcualtor will help you to do this.
-                    You can then start looking for the right property that meets your criteria. You can register online
-                    with us for property updates. Setting up an online account is a great way to ensure that as soon as
-                    any property comes up that matches your criteria you are immediately notified.</p>
-                <h3>Step 2: Book an appointment to view the house</h3>
-                <p>Once you have found a property that you are interested in get in touch with the office to arrange a
-                    suitable time for you to view the property. Our website was designed for you to have an easy
-                    experience when trying to find the perfect home so the more information you can give them to explain
-                    exactly what you are looking for and what is on your wish list will assist them in helping you to
-                    find ‘home’.</p>
-                <h3>Step 3: Make a decision</h3>
-                <p>If you would like to rent a property that you have seen you should then notify us quickly that you
-                    would like to rent it out. From a finance perspective make sure that you consider how much the
-                    deposit is .</p>
-                <h3>Step 4: Complete the paper work</h3>
-                <p>Once you have found a property that you are interested in get in touch with us to arrange a suitable
-                    time for you to view the property.
-                    Our staff are fully trained in helping you find the perfect home so the more information you can
-                    give them to explain exactly what you are looking for and what is on your wish list will assist them
-                    in helping you to find ‘home’.</p>
-                <h3>Step 5: Sign tenant agreement and make the deposit</h3>
-                <p>A tenant agreement is then drawn up which details all of the legal and contractual obligations that
-                    both you and your landlord must adhere to. It is important that you are familiar with the agreement
-                    before you sign it so make sure that you ask for a draft agreement when your application is
-                    accepted.
-                    The security deposit and the first rental payment is then taken. It is a legal requirement that the
-                    tenancy deposit is registered with a Government approved deposit scheme after it has been paid. We
-                    have produced a Tenant guide to tenancy deposit protection which explains in simple terms what is
-                    required. Before you can move in you must pay the balance of any monies owed such as the first
-                    months’ rent, the deposit and any outstanding fees.</p>
-                <h3>Step 6: Move In</h3>
-                <p>Before you move in the Landlord will have had an inventory prepared. This document describes the
-                    condition of the property and anything left behind by the landlord. The inventory is used when you
-                    leave the property to ensure that the condition that you leave it in can be fairly assessed against
-                    any deposit deductions that may come up.
-                    Insurance – your landlord is responsible for insuring the building and their possessions but you may
-                    want to take out your own contents insurance. </p>
-            </div>
-        </section>
+        <main>
+            <div class="container py-4">
+                <div class="row g-3">
+                    <div class="col-lg-3 col-md-12 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center"
+                        style="background-color: white;">
+                        <i class="fa-regular fa-image fa-2xl"></i>
+                        <p class="mt-4">Upload House Image</p>
+                        <p>Recommended Format: PNG or JPG</p>
+                        <form>
+                            <!-- Hide the default input file element -->
+                            <input type="file" id="upload-image" name="upload-image" style="display: none;">
 
+                            <!-- Create a custom-styled label as the button -->
+                            <label for="upload-image"
+                                style="cursor: pointer; padding: 10px 20px; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 5px;">
+                                <i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i> Upload Image
+                            </label>
+
+                        </form>
+
+                    </div>
+                    <div
+                        class="col-lg-3 col-md-12 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center">
+                        <!-- Hide the default input file element -->
+                        <input type="file" id="upload-image" name="upload-image" style="display: none;">
+
+                        <!-- Create a custom-styled label as the button -->
+                        <label for="upload-image"
+                            style="cursor: pointer; padding: 10px 20px; background-color: none; border: 1px solid #ccc; border-radius: 5px; border: none;">
+                            <i class="fa-solid fa-circle-plus fa-lg"></i>
+                        </label>
+                        <p>Add More</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 ps-3">
+                        <input type="text" class="form-control" id="floatingPassword" placeholder="Title">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class=""
+                </div>
+            </div>
+        </main>
         <footer id="footer">
             <div class="container row">
                 <div class="fw-lighter pt-5 col-6 col-lg-3">
@@ -121,8 +117,9 @@
                 <div class="fw-lighter pt-5 col-7 col-lg-3">
                     <div class="footer-text">
                         <h3>CONTACT US</h3>
-                        <p><i class="fa-regular fa-message fa-flip-horizontal" style="color: #cfd0d3;"></i>  mail@findmyspace.com</p>
-                        <p><i class="fa-solid fa-location-dot" style="color: #e0dcdc;"></i>  Mpesi Lane, Nairobi</p>
+                        <p><i class="fa-regular fa-message fa-flip-horizontal" style="color: #cfd0d3;"></i>
+                            mail@findmyspace.com</p>
+                        <p><i class="fa-solid fa-location-dot" style="color: #e0dcdc;"></i> Mpesi Lane, Nairobi</p>
                     </div>
                 </div>
                 <div class="fw-lighter pt-5 col-5 col-lg-3">
