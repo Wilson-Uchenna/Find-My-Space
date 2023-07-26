@@ -27,7 +27,7 @@
 /* Desktop devices (992px and above) */
 @media (min-width: 992px) {
    #rent-locations {
-    max-width: 60%
+    max-width: 50%
   }
   .product-head {
     font-size: 10px;
@@ -99,7 +99,9 @@
  #nav-header {
    font-family: 'Oswald';
  }
-
+.image-container p {
+  margin-right: 20px;
+}
  #list-class {
    margin-right: 17%;
  }
