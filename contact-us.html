@@ -133,7 +133,19 @@
                             <textarea class="form-control" id="validationTextarea" style="border-top: none; border-left: none; border-right: none;" placeholder="Write Your Message"
                                 required></textarea>
                         </div>
-                        <button type="submit" class="btn d-flex justify-content-end text-light" style="background-color: #0d47a1;">Send Message</button>
+                        <button type="submit" class="btn d-flex justify-content-end text-light" style="background-color: #0d47a1;" data-bs-toggle="modal" data-bs-target="#exampleModal">Send Message</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" style="width: 20rem;">
+                              <div class="modal-content">
+                                <div class="modal-body text-center">
+                                  <p><i class="fa-solid fa-circle-check fa-2xl" style="color: #a2fbac;"></i></p>
+                                  <p>Message Sent</p>
+                                  <a href="index.html"><button class="py-1 px-4 rounded-3">Back to Home Page</button></a>
+                                </div>
+                                
+                              </div>
+                            </div>
+                          </div>
                     </div>
 
                 </div>
