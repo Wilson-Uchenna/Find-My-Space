@@ -30,7 +30,7 @@
                             <a href="index.html" class="nav-link">Home</a>
                         </li>
                         <li class="nav-item pe-3">
-                            <a href="" class="nav-link">About</a>
+                            <a href="about-us.html" class="nav-link">About</a>
                         </li>
                         <li class="nav-item pe-3">
                             <a href="properties.html" class="nav-link">Properties</a>
@@ -54,8 +54,8 @@
         </div>
         <main>
             <div class="container py-4">
-                <div class="row g-3">
-                    <div class="col-lg-3 col-md-12 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center"
+                <div class="row g-2">
+                    <div class="col-lg-3 col-md-6 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center me-4"
                         style="background-color: white;">
                         <i class="fa-regular fa-image fa-2xl"></i>
                         <p class="mt-4">Upload House Image</p>
@@ -74,7 +74,7 @@
 
                     </div>
                     <div
-                        class="col-lg-3 col-md-12 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center">
+                        class="col-lg-3 col-md-6 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center">
                         <!-- Hide the default input file element -->
                         <input type="file" id="upload-image" name="upload-image" style="display: none;">
 
@@ -86,16 +86,97 @@
                         <p>Add More</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-5 ps-3">
+                <div class="row g-3 mb-3">
+                    <div class="col-6 ps-3">
                         <input type="text" class="form-control" id="floatingPassword" placeholder="Title">
                     </div>
                 </div>
-                <div class="row">
-                    <div class=""
+                <div class="row g-3 mb-3">
+                    <div class="col-6 ps-3">
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                            <option selected>Type</option>
+                            <option value="1">Flats</option>
+                            <option value="2">Duplex</option>
+                            <option value="3">Twin Duplex</option>
+                            <option value="4">Bungalow</option>
+                        </select>
+                    </div>
                 </div>
-            </div>
+                <div class="row g-3 mb-3">
+                    <div class="col-6 ps-3">
+                        <select id="property-type" class="form-select form-select-sm"
+                            aria-label=".form-select-sm example">
+                            <option selected>Details</option>
+                            <option value="1">Flats</option>
+                            <option value="2">Duplex</option>
+                            <option value="3">Twin Duplex</option>
+                            <option value="4">Bungalow</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-floating col-lg-6 col-sm-8 ms-2">
+                        <textarea class="form-control" placeholder="Leave a comment here"
+                            id="floatingTextarea"></textarea>
+                        <label class="ps-3" for="floatingTextarea">Comments</label>
+                    </div>
+                </div>
+                <div class="row py-4">
+                    <div class="col-lg-3 col-md-12 col-sm-10 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center"
+                        style="background-color: white;">
+                        <i class="fa-solid fa-tv fa-2xl"></i>
+                        <p class="mt-4">Upload House Video(Optional)</p>
+                        <p>Recommended size: < 100MB</p>
+                                <form>
+                                    <!-- Hide the default input file element -->
+                                    <input type="file" id="upload-image" name="upload-image" style="display: none;">
+
+                                    <!-- Create a custom-styled label as the button -->
+                                    <label for="upload-image"
+                                        style="cursor: pointer; padding: 10px 20px; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 5px;">
+                                        <i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i> Upload Image
+                                    </label>
+                                </form>
+                    </div>
+                </div>
+                <div class="row pt-3 pb-4">
+                    <h3>Contact Information</h3>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-sm-12 rounded-5 shadow mb-3 bg-body rounded d-flex flex-column py-5 align-items-center"
+                            style="background-color: white;">
+                            <i class="fa-regular fa-image fa-2xl"></i>
+                            <p class="mt-4">Upload House Image</p>
+                            <p>Recommended Format: PNG or JPG</p>
+                            <form>
+                                <!-- Hide the default input file element -->
+                                <input type="file" id="upload-image" name="upload-image" style="display: none;">
+
+                                <!-- Create a custom-styled label as the button -->
+                                <label for="upload-image"
+                                    style="cursor: pointer; padding: 10px 20px; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 5px;">
+                                    <i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i> Upload Image
+                                </label>
+
+                            </form>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-floating mb-3 col-lg-6 col-sm-8 ps-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Seller's Name">
+                                <label class="ps-5" for="floatingInput">Seller's Name</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-floating col-lg-6 col-sm-8 ps-3">
+                                <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone Number">
+                                <label class="ps-5" for="floatingPassword">Phone Number</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
         </main>
+
+
         <footer id="footer">
             <div class="container row">
                 <div class="fw-lighter pt-5 col-6 col-lg-3">

@@ -95,3 +95,13 @@ if (loginForm) {
             }
     });
 }
+const propertyTypeSelect = document.getElementById('property-type');
+    const option3Content = document.getElementById('option-3-content');
+
+    propertyTypeSelect.addEventListener('change', () => {
+        if (propertyTypeSelect.value === '3') {
+            option3Content.style.display = 'block';
+        } else {
+            option3Content.style.display = 'none';
+        }
+    });
