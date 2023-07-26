@@ -95,3 +95,44 @@ if (loginForm) {
             }
     });
 }
+document.getElementById('upload-image').addEventListener('change', function() {
+    const uploadContainer = document.getElementById('upload-container');
+    const fileInput = this;
+    const element = document.querySelector('.col-lg-3.col-md-12.col-sm-12.rounded-5.shadow.mb-3.bg-body.rounded.d-flex.flex-column.py-5.align-items-center');
+
+    if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            const uploadedImage = document.createElement('img');
+            uploadedImage.src = e.target.result;
+            uploadedImage.classList.add('img-fluid', 'mt-4'); // Add Bootstrap class for responsive images
+            uploadContainer.innerHTML = ''; // Clear previous content
+            uploadContainer.appendChild(uploadedImage);
+            const element = document.querySelector('.col-lg-3.col-md-12.col-sm-12.rounded-5.shadow.mb-3.bg-body.rounded.d-flex.flex-column.py-5.align-items-center');
+        }
+
+        reader.readAsDataURL(fileInput.files[0]);
+    }
+});
+document.getElementById('upload-image-2').addEventListener('change', function() {
+    const element = document.querySelector('.col-lg-3.col-md-12.col-sm-12.rounded-5.shadow.mb-3.bg-body.rounded.d-flex.flex-column.py-5.align-items-center');
+    const uploadContainer = document.getElementById('upload-container-2');
+    const fileInput = this;
+
+    if (fileInput.files && fileInput.files[0]) {
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+            const uploadedImage = document.createElement('img');
+            uploadedImage.src = e.target.result;
+            
+            uploadedImage.classList.add('img-fluid'); // Add Bootstrap class for responsive images
+            uploadContainer.innerHTML = ''; // Clear previous content
+            uploadContainer.appendChild(uploadedImage);
+            element.classList.remove('py-5');
+        }
+
+        reader.readAsDataURL(fileInput.files[0]);
+    }
+});

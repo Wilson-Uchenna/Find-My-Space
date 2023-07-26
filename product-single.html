@@ -19,7 +19,7 @@
                 <a class="navbar-brand" href="index.html" id="nav-header" style="color: #fff;">Find My Space</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                    <span class="navbar-toggler-icon btn-outline-primary"></span></button>
+                    <span class="navbar-toggler-icon btn-outline-primary" style="--bs-navbar-toggler-icon-color: #ff0000;"></span></button>
                 <div class="collapse navbar-collapse" id="navmenu">
                     <ul class="navbar-nav ms-auto" id="list-class" style="color: #fff;">
                         <li class="nav-item pe-3">
@@ -73,8 +73,30 @@
                                 </div>
                                 <a href="#"><button class="px-5 py-1 rounded-3 mb-2">Show Contact <i
                                             class="fa-solid fa-phone fa-fade"></i></button></a>
-                                <a href="#"><button class="px-5 py-1 rounded-3 mb-2">Start Chat <i
+                                            
+                                <a href="#"><button class="px-5 py-1 rounded-3 mb-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Start Chat <i
                                             class="fa-solid fa-envelope fa-shake"></i></button></a>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Your Message</h5>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="form-floating col-lg-12 col-sm-8 ms-2">
+                                                            <textarea class="form-control border-0" placeholder="Leave a comment here"
+                                                                id="floatingTextarea"></textarea>
+                                                            <label class="ps-3" for="floatingTextarea">Type Your </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      
+                                                      <button type="button" class="btn btn-primary">Send Message</button>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                             </div>
                             <div class="safety-tips shadow p-3 mb-3 bg-body rounded rounded-4" style="font-size: 10px;">
                                 <h4>Safety Tips</h4>
