@@ -43,7 +43,10 @@
                         </li>
                     </ul>
                     <div class="btn-group">
-                        <button class="btn mt-2"><img src="img/notification.svg"></button>
+                        <button class="btn mt-2 me-2 position-relative"><img src="img/notification.svg">
+                            <span class="position-absolute top-30 start-40 translate-middle p-2 bg-danger border border-light rounded-circle">
+                                <span class="visually-hidden">unread messages</span>
+                              </span></button>
                         <button class="btn rounded-circle"><img src="img/Avatar.png"></button>
                     </div>
                 </div>
@@ -87,12 +90,12 @@
                     </div>
                 </div>
                 <div class="row g-3 mb-3">
-                    <div class="col-6 ps-3">
+                    <div class="col-6 ps-3" style="margin-left: -14px;">
                         <input type="text" class="form-control" id="floatingPassword" placeholder="Title">
                     </div>
                 </div>
                 <div class="row g-3 mb-3">
-                    <div class="col-6 ps-3">
+                    <div class="col-6 ps-3" style="margin-left: -14px;">
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                             <option selected>Type</option>
                             <option value="1">Flats</option>
@@ -103,7 +106,7 @@
                     </div>
                 </div>
                 <div class="row g-3 mb-3">
-                    <div class="col-6 ps-3">
+                    <div class="col-6 ps-3" style="margin-left: -14px;">
                         <select id="property-type" class="form-select form-select-sm"
                             aria-label=".form-select-sm example">
                             <option selected>Details</option>
@@ -116,7 +119,7 @@
                 </div>
                 <div class="row">
                     <div class="form-floating col-lg-6 col-sm-8 ms-2">
-                        <textarea class="form-control" placeholder="Leave a comment here"
+                        <textarea class="form-control" style="margin-left: -15px;" placeholder="Leave a comment here"
                             id="floatingTextarea"></textarea>
                         <label class="ps-3" for="floatingTextarea">Comments</label>
                     </div>
@@ -161,15 +164,15 @@
 
                         </div>
                         <div class="row">
-                            <div class="form-floating mb-3 col-lg-6 col-sm-8 ps-3">
+                            <div class="form-floating mb-3 col-lg-6 col-sm-8 ps-3" style="margin-left: -16px;">
                                 <input type="text" class="form-control" id="floatingInput" placeholder="Seller's Name">
-                                <label class="ps-5" for="floatingInput">Seller's Name</label>
+                                <label class="ps-4" for="floatingInput">Seller's Name</label>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-floating col-lg-6 col-sm-8 ps-3">
+                            <div class="form-floating col-lg-6 col-sm-8 ps-3" style="margin-left: -16px;">
                                 <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone Number">
-                                <label class="ps-5" for="floatingPassword">Phone Number</label>
+                                <label class="ps-4" for="floatingPassword">Phone Number</label>
                             </div>
                         </div>
                         <div class="row">
@@ -208,8 +211,8 @@
                     <div class="footer-text">
                         <h3>HELP</h3>
                         <p>Customer Support</p>
-                        <p>Terms & Conditions</p>
-                        <p>Privacy Policy</p>
+                        <a class="text-light text-decoration-none" href="terms-conditions.html"><p>Terms & Conditions</p></a>
+                        <a class="text-light text-decoration-none" href="privacy-policy.html"><p>Privacy Policy</p></a>
                     </div>
                 </div>
                 <div class="fw-lighter pt-5 col-7 col-lg-3">
