@@ -117,10 +117,11 @@
  #main-2 {
   background-image: url(img/family-image.png);
  }
-#main-3 {
+/* #main-3 {
   background-image: url(img/news-how-it-works.png);
   background-size: 100%;
-}
+  width: 200px;
+} */
 #section-3 {
   font-weight: bold;
 }

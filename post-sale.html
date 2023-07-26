@@ -65,7 +65,7 @@
                             <input type="file" id="upload-image" name="upload-image" style="display: none;">
 
                             <!-- Create a custom-styled label as the button -->
-                            <label for="upload-image"
+                            <label for="upload-image" class="mb-3"
                                 style="cursor: pointer; padding: 10px 20px; background-color: #f2f2f2; border: 1px solid #ccc; border-radius: 5px;">
                                 <i class="fa-solid fa-arrow-up-from-bracket fa-lg"></i> Upload Image
                             </label>
@@ -79,7 +79,7 @@
                         <input type="file" id="upload-image-2" name="upload-image" style="display: none;" class="pt-5 mt-4">
 
                         <!-- Create a custom-styled label as the button -->
-                        <label for="upload-image-2"
+                        <label for="upload-image-2" class="pt-5"
                             style="cursor: pointer; padding: 10px 20px; background-color: none; border: 1px solid #ccc; border-radius: 5px; border: none;">
                             <i class="fa-solid fa-circle-plus fa-lg"></i>
                         </label>
@@ -170,6 +170,23 @@
                             <div class="form-floating col-lg-6 col-sm-8 ps-3">
                                 <input type="tel" class="form-control" id="floatingPassword" placeholder="Phone Number">
                                 <label class="ps-5" for="floatingPassword">Phone Number</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mt-3">
+                            <button type="submit" class="py-1 px-4 rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">Post</button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" style="width: 20rem;">
+                                      <div class="modal-content">
+                                        <div class="modal-body text-center">
+                                          <p><i class="fa-solid fa-circle-check fa-2xl" style="color: #a2fbac;"></i></p>
+                                          <p>You have successfully made a post</p>
+                                          <a href="index.html"><button class="py-1 px-4 rounded-3">Back to Home Page</button></a>
+                                        </div>
+                                        
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
