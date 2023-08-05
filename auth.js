@@ -63,6 +63,7 @@ if (signupForm) {
         }
 
         if (count == 4) {
+            localStorage.setItem('signedUp', 'true')
             window.location.href = "./index.html";
         }
     });
@@ -91,9 +92,10 @@ if (loginForm) {
         }
 
         if (count == 2) {
+            localStorage.setItem('loggedIn', 'true');
             window.location.href = "./index.html";
             }
-    });
+        });
 }
 document.getElementById('upload-image').addEventListener('change', function() {
     const uploadContainer = document.getElementById('upload-container');
@@ -136,3 +138,9 @@ document.getElementById('upload-image-2').addEventListener('change', function() 
         reader.readAsDataURL(fileInput.files[0]);
     }
 });
+
+
+
+
+  
+
